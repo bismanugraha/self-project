@@ -1,0 +1,33 @@
+.board {
+    position: relative;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-color: bisque;
+}
+
+.player, .tail {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: green;
+}
+
+.target {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+}
+
+.middle-text {
+    text-align: center;
+}
+
+.container {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
