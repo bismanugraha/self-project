@@ -10,6 +10,13 @@
     position: absolute;
     width: 10px;
     height: 10px;
+}
+
+.player {
+    background-color: darkgreen;
+}
+
+.tail {
     background-color: green;
 }
 
