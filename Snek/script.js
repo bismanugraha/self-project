@@ -133,7 +133,7 @@ function movement(pos) {
     // Defeat condition: Out of bounds
     if (parseFloat(playerPos.style.top) > 190 || parseFloat(playerPos.style.top) < 0 ||
         parseFloat(playerPos.style.left) > 190 || parseFloat(playerPos.style.left) < 0) {
-            document.getElementById("condition").innerHTML = "yee malah bablas"
+            document.getElementById("condition").innerHTML = "Out of Bound!"
             gameOver()
         }
 
@@ -157,7 +157,7 @@ function movement(pos) {
     // Defeat condition: Eat by itself
     for (let i = 0; i < tail.length; i++) {
         if (playerPos.style.left == tail[i].style.left && playerPos.style.top == tail[i].style.top) {
-            document.getElementById("condition").innerHTML = "yee malah mangan dewek"
+            document.getElementById("condition").innerHTML = "You have eat yourself!"
             gameOver()
         }
     }
